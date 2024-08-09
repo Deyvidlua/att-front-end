@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Mensagem</title>
+    <meta charset="UTF-8">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="/terceira aula/style.css">
+</head>
+
+<body bgcolor="pink">
+    <fieldset>
+        <legend>Fale conosco</legend>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados</legend>
+                <p>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="off"
+                        maxlength="4" size="40" required="" />
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="off" required="" />
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <p>
+                    <legend>Mensagem</legend>
+                    Assunto:<br>
+                    <input type="radio" name="assunto" value="0" checked>Pessoal
+                    <input type="radio" name="assunto" value="1">Público
+                </p>
+                Enviar para:<br>
+                <input type="checkbox" name="presidente" id="presidente" checked> <label
+                    for="copia">Presidente</label><br>
+                <input type="checkbox" name="diretor" id="diretor" value="diretor"> <label
+                    for="diretor">Diretor</label><br />
+
+
+                <p>
+                </p>
+                <label for="tempo">Quantos meses trabalhando na empresa?</label><br>
+                <input min="0" type="number" id="tempo" name="tempo" required="" />
+                </p>
+
+
+                <label for="nome">Data do ocorrido?</label>
+                <input type="date" id="data" name="data" required="" />
+                </p>
+                <fi>
+                    <label for="nome">Qual setor?</label>
+                    <select id="UF" name="setor">
+                        <option value="">Selecione</option>
+                        <opition value="AC">compras</opition>
+                        <opition value="AC">vendas</opition>
+                        <opition value="AC">produção</opition>
+                    </select>
+                    <p>
+                        <label for="arquivo">Tem fatos?</label>
+                        <input type="file" name="fatos" id="fatos"><br>
+
+
+                    </p>
+                    <p>
+                        <label for="mensagem">Escreva a mensagem</label><br>
+                        <textarea type="text" id="mensagem" name="mensagem" rows="3" placeholder="mensagem"
+                            autocomplete="off">
+                    </textarea>
+                    </p>
+            </fieldset>
+            <p aling="center">
+                <input type="submit" name="enviar" value="enviar">
+                <input type="reset" name="limpar" value="limpar">
+                <a href="/terceira aula/form.html">
+                    <img src="/primeira aula/img/back" width="200">
+                </a>
+            </p>
+    </fieldset>
+    </form>
+
+</body>
+
+</html>
